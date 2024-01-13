@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aarushi Shanker - Tech Enthusiast</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="portfolio.css"/>
+  </head>
+  <body>
+    <div class="main fixed-top" id="main">        
+    <nav class="navbar fixed-top h-nav">
+        <div class="container-fluid">
+          <a style="display: flex;" class="navbar-brand" href="index.html" >
+            <img src="./assets/brand-icon.png" style="border-radius: 50%; margin-right:0.6rem; width:2rem" height="35"  class="d-inline-block align-text-top">
+            <div style="display: flex;" class="brandname">
+              <h3 style="color:var(--white)">Aarushi</h3>
+              <h3 style="color: var(--main-color);" >Shanker</h3>
+            </div>
+          </a>
+          <ul class="nav v-class justify-content-end">
+            <li class="nav-item">
+              <a class="nav-links active-link" onclick="opentab('Home')" aria-current="page" href="#main">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links" onclick="opentab('About')" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links" onclick="opentab('Education')" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links" onclick="opentab('Skills')" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links" onclick="opentab('Projects')" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-links" onclick="opentab('Contact')" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa-solid fa-lightbulb mode" id="mode"></i>
+            </li>
+          </ul>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="main-text">
+        <p>Hello,</p>
+        <h1>I am <span>Aarushi Shanker</span></h1>
+        <p>and I welcome you to<span> my Portfolio</span>.</p>
+        <a href="#about" style="text-decoration: none;">
+          <button style="background-color: transparent;">Tap to Know Me More</button>
+        </a>
+      </div>
+      </div>
+      <div id="about">
+        <div class="container overflow-hidden text-center">
+          <div class="row-contain">
+            <div class="col-1">
+  
+              <img src="./assets/about.jpg"/>
+
+            </div>
+            <div class="col-2">
+             <h1 class="subtitle">About Me</h1>
+                <p>I am an engineering student at BIT Mesra with a penchant for coding. At the moment, I am in an aww of Web Development and hence dabbling with some projects in this domain as I juggle the intricacies of Data Structures and Algorithms(C,Java) along with Machine Learning(Python). My determination is to make up what I lack in skills with my quest for learning.<br>
+                  <br>
+                  Outside the tech realm, I am an ardent wordsmith and find joy in crafting narratives, articulating my caffeine-fueled musings and venturing into the possibilities of literary seas. In tandem, in the quiet interludes of my day, I indulge in the enchanting realm of guitar wizardry.
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="education">
+        <div class="container">
+          <h1 class="subtitle">My Education</h1>
+          <div class="container">
+            <div class="row">
+              <div class="col education-tab">
+                <h1>
+                  <a data-bs-toggle="collapse" href="#college" role="button" aria-expanded="false">BIT Mesra
+                    <span>(Ongoing)<br>
+                    B.Tech in Computer Science and Engineering</span>
+                  </a>
+                </h1>
+                <div class="collapse multi-collapse" id="college">
+                  <p><b>SGPA(3rd Semester)</b> : 9.40<br>
+                    <b>Activities</b> : <br>
+                    Event Co-ordinator, DIVYA<br>
+                    Event Co-ordinator, Literary Club<br>
+                    Event Co-ordinator, Creativity Club, Pratibimb Society<br>
+                    Event Co-ordinator, Music Club, Pratibimb Society<br>
+                  </p>
+                </div>
+              </div>
+              <div class="col align-self-end education-tab">
+                <h1 >
+                  <br>
+                  <a data-bs-toggle="collapse" href="#school" role="button" aria-expanded="false">Mount Assisi School
+                    <br> <span>Nursery - Grade 12</span>
+                  </a>
+                </h1>
+                  <div class="collapse multi-collapse" id="school">
+                    <p><b>XII</b> : 97%<br>
+                      <b>X</b> : 95.6%<br>
+                      <b>Member of School Cabinet</b> : <br>
+                      School Prefect for the Session 2018-2019
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="skills">
+        <div class="container">
+          <h1 class="subtitle">My Skills</h1>
+          <div class="skill-titles">
+            <div class="skill-links active-link" onclick="openskill('Programming')" ><h3>Progamming Languages</h3></div>
+            <div class="skill-links" onclick="openskill('Tools')"><h3>Tools</h3></div>
+          </div>
+          <div class="skill-contents active-skill" id='Programming'>
+            <div class="lang-heading">HTML</div>
+            <div class="progress" role="progressbar"  aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 98%; background-color: var(--main-color);">98%</div> 
+            </div> 
+            <div class="lang-heading">CSS</div>
+            <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 95%; background-color: var(--main-color);">95%</div> 
+            </div>
+            <div class="lang-heading">Javascript</div>
+            <div class="progress" role="progressbar"  aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 90%; background-color: var(--main-color);">90%</div> 
+            </div>
+            <div class="lang-heading">C</div>
+            <div class="progress" role="progressbar"  aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 95%; background-color: var(--main-color);">95%</div> 
+            </div>
+            <div class="lang-heading">Java</div>
+            <div class="progress" role="progressbar"  aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 95%; background-color: var(--main-color);">95%</div> 
+            </div>
+            <div class="lang-heading">Python</div>
+            <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 90%; background-color: var(--main-color);">90%</div> 
+            </div>        
+          </div>
+          <div class="skill-contents" id="Tools">
+            <ul>
+              <li><span>Bootstrap</span><br>(Frontend Web Development)</li>
+              <li><span>Node.js</span><br>(Backend Web Devlopment)</li>
+              <li><span>React</span><br>(Full Stack Web Development)</li>
+              <li><span>Oracle pl SQL</span><br>(Database Management)</li>
+              <li><span>Figma</span><br>(UI Designing)</li>
+              <li><span>Canva</span><br>(Photo editing)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="projects">
+        <div class="container">
+          <h1 class="subtitle">My Projects</h1>
+          <div class="project-list">
+            <div class="project">
+              <img src="./assets/project1.jpg"/>
+              <div class="layer">
+                <h3>Amazon Clone</h3>
+                <p>This is a basic replica of the amazon.com website's homepage User Interface crafted using HTML for structure and CSS for typography and styling elements to closely mimic the amazon.com UI.</p>
+                <a href="./CloneProject/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="./assets/project2.jpg"/>
+              <div class="layer">
+                <h3>Music Player</h3>
+                <p>This is an aesthetic music player with UI closely replicating Spotify-Web Player crafted using HTML, CSS, JavaScript. It allows users to play songs of their choice, featuring intuitive playback controls. Audio level can be adjusted as per user's choice. Listen to your favourite singers playlist smoothly.</p>
+                <a href="./musicPlayer/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="./assets/project3.jpg"/>
+              <div class="layer">
+                <h3>Rock Paper Scissor Game</h3>
+                <p>A classic game of Rock, Paper, Scissors using the dynamic trio of HTML, CSS, JavaScript. The player can smoothly make their move with responsive controls against the gaming bot and the score board will relay you the winner.</p>
+                <a href="./RockPaperScissor/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div> 
+          <div class="collapse multi-collapse" id="see-more">
+            <div class="project-list">
+              <div class="project">
+                <img src="./assets/project1.jpg"/>
+                <div class="layer">
+                  <h3>Amazon Clone</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio doloremque ratione neque autem eaque ducimus minus tempora adipisci corporis quae consectetur, aut dolorum architecto! Architecto omnis nam est magnam.</p>
+                  <a href="./CloneProject/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="project">
+                <img src="./assets/project2.jpg"/>
+                <div class="layer">
+                  <h3>Music Player</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio doloremque ratione neque autem eaque ducimus minus tempora adipisci corporis quae consectetur, aut dolorum architecto! Architecto omnis nam est magnam.</p>
+                  <a href="./musicPlayer/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="project">
+                <img src="./assets/project3.jpg"/>
+                <div class="layer">
+                  <h3>Rock Paper Scissor Game</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio doloremque ratione neque autem eaque ducimus minus tempora adipisci corporis quae consectetur, aut dolorum architecto! Architecto omnis nam est magnam.</p>
+                  <a href="./RockPaperScissor/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a data-bs-toggle="collapse" href="#see-more" role="button" aria-expanded="false">
+            <div class="button" id="see-project">See More</div>
+          </a>
+        </div>
+      </div>
+      <div id="contact">
+        <div class="container">
+          <div class="row-contain">
+            <div class="col-1">
+             <div class="p-3 contact-left">
+              <h1 class="subtitle">Contact Me</h1>
+              <h4><i class="fa-solid fa-envelope"></i> aarushishanker181@gmail.com</h4>
+              <h4><i class="fa-solid fa-phone"></i>9508580091</h4>
+              <div class="social-icons">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="icons">
+                        <ul>
+                          <li>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i>
+                              <span>Aarushi Shanker</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa-brands fa-facebook"></i>
+                              <span>Aarushi Shanker</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa-brands fa-instagram"></i>
+                              <span>aarushi.shanker</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+              <a href="./assets/resume.pdf" download class="button btn" data-toggle="tooltip" data-placement="right" data-html="true" title="Click to download">Resume</a>
+             </div>
+            </div>
+            <div class="col-1">
+              <div class="p-3 contact-right">
+                <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="email" placeholder="Your email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="button btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &#169 Aarushi</p>
+      </div>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyRJUGUHjX4UykGHoCmQuQ8hs0SUkbk_lJCmPCIljZ9Xxf6HBJOqR1Q16aU-8otqHb9/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+              msg.innerHTML="Feedback saved successfully"
+              setTimeout(function(){
+                msg.innerHTML="";
+              },5000)
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script src="https://kit.fontawesome.com/62ae7ab814.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="portfolio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,494 @@
+:root {
+    --black: #000;
+    --grey: #121212;
+    --light-grey: #232323;
+    --white: #fff;
+  }
+  body,
+  html {
+    height: 100%;
+    margin: 0rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito", sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+  }
+  
+  a {
+    color: var(--white);
+    text-decoration: none;
+  }
+  
+  .container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    background-color: var(--black);
+    padding: 0.5rem;
+  }
+  
+  .sidebar {
+    flex: 0.25;
+    overflow-y: auto;
+  
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+  }
+  
+  .top-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--grey);
+    border-radius: 0.5rem;
+  }
+  
+  .link-flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    opacity: 0.7;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  
+  .link-flex:hover {
+    opacity: 1;
+    transition: all 0.3s;
+  }
+  
+  .link-flex img {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+  .link-flex p {
+    font-size: 1rem;
+    color: var(--white);
+  }
+  
+  .library {
+    border-radius: 0.5rem;
+    flex: 3;
+    overflow-y: auto;
+    background-color: var(--grey);
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .flex-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex-top img {
+    height: 1rem;
+    width: 1rem;
+    opacity: 0.8;
+    margin-top: 0.5rem;
+  }
+  
+  .flex-top p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+  
+  .flex-top p:hover {
+    opacity: 1;
+    transition: all 0.3s;
+  }
+  
+  .flex-top img:hover {
+    opacity: 1;
+    transition: all 0.3s;
+  }
+  
+  .chip {
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--light-grey);
+    border-radius: 5rem;
+    width: fit-content;
+    font-weight: normal;
+    color: var(--white);
+  }
+  
+  .main-content {
+    flex: 0.8;
+    overflow-y: auto;
+    background-color: var(--grey);
+    padding: 0rem 1rem;
+    border-radius: 0.5rem;
+    padding-bottom: 6rem;
+  }
+
+  .active{
+    color:#232323;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background-color: rgb(131, 129, 129);
+    border-radius: 5rem;
+    width: fit-content;
+  }
+
+  .menu{
+    width: 80%;
+    font-size:1.15rem;
+  }
+  
+  .album-flex {
+    margin-bottom: 1rem;
+  }
+  
+  .albums {
+    margin-top: 1rem;
+  }
+  
+  .album-cover {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.2rem;
+  }
+  
+  .col-flex p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 0.8rem;
+  }
+  
+  .album-name {
+    color: var(--white);
+    margin-bottom: 0.35rem !important;
+    font-size: 1rem !important;
+  }
+  
+  .navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    align-items: center;
+    background-color: var(--grey);
+    z-index: 1000;
+    /* Other styles as needed */
+  }
+
+  .left-nav{
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-box{
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--light-grey);
+    border-radius: 5rem;
+    width: fit-content;
+    font-weight: normal;
+    color: var(--white);
+    margin-left: 1.5rem;
+  }
+
+  
+
+  .search{
+    width:300px;
+    border: none;
+    background-color: #232323;
+  }
+
+  .result{
+    position: absolute;
+    width: 300px;
+    height:200px;
+    margin-top: 15px;
+    margin-left: 25px;
+    overflow: auto;
+  }
+
+  .box{
+    width:100%;
+    min-height:45px;
+    display:flex;
+    align-items: center;
+    background-color:rgb(184,184,184,1);
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display:none;
+  }
+
+  .box img{
+    height: 30px;
+    width: 30px;
+    margin-left: 0.5rem;
+    border-radius: 2px;
+    margin-right: 1rem;
+  }
+
+  .cont{
+    width: 80%;
+    color: #000;
+  }
+
+  .play-bar{
+    width: 45%;
+    cursor: pointer;
+    background-color: var(--light-grey);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin: 0rem 0.75rem;
+  }
+
+  .play-img{
+    width: 200px;
+    border-radius: 0.35rem;
+    
+  }
+
+  #playerPlay{
+    height: 5rem;
+    width: 5rem;
+  }
+  
+  .play-name {
+    padding-top: 0.5rem;
+  }
+  
+  .play-description {
+    font-size: 0.8rem;
+    opacity: 0.5;
+  }
+
+  .index{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.9rem;
+  }
+
+  .headings{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-right: 2rem;
+  }
+
+  
+  .cards-container {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    cursor: pointer;
+    width: 150px;
+    background-color: var(--light-grey);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    height: fit-content;
+    margin: 0rem 0.75rem;
+  }
+  
+  .card-img {
+    width: 100%;
+    border-radius: 0.35rem;
+  }
+  
+  .card-name {
+    margin: 0.25rem 0;
+    text-overflow: ellipsis;
+  }
+  
+  .card-description {
+    margin: 0;
+    font-size: 0.8rem;
+    opacity: 0.5;
+  }
+  
+  .player {
+    width: 100%;
+    height: 80px; /* Adjust as needed */
+    position: fixed;
+    bottom: 0;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .master-play{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wave{
+    width: 30px;
+    height: 30px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 0.65rem;
+  }
+  .wave .waveform{
+    width:3px;
+    height:6px;
+    background-color: white;
+    margin-right: 3px;
+    border-radius: 10px 10px 0px 0px;
+    animation: unset;
+  }
+  .waveform:nth-child(2){
+    height: 10px;
+    margin-right:3.5px ;
+    animation-delay: 0.4s ;
+  }
+  .waveform:nth-child(3){
+    height:13px;
+    animation-delay: 0.6s ;
+  }
+  .waveform:nth-child(4){
+    height:8px ;
+    animation-delay: 0.8s ;
+  }
+  .waveform:nth-child(5){
+    height: 4px;
+    animation-delay: 1s ;
+  }
+
+  @keyframes wave{
+    0%{
+      height:5px;
+    }
+    25%{
+      height:10px;
+    }
+    50%{
+      height:15px;
+    }
+    75%{
+      height:10px;
+    }
+    100%{
+      height:5px;
+    }
+  }
+
+  /*javascript classes*/
+  .activate .waveform{
+    animation: wave 0.5s linear infinite;
+  }
+  .activate .waveform:nth-child(2){
+    animation-delay: 0.4s ;
+  }
+  .activate .waveform:nth-child(3){
+    animation-delay: 0.6s ;
+  }
+  .activate .waveform:nth-child(4){
+    animation-delay: 0.8s ;
+  }
+  .activate .waveform:nth-child(5){
+    animation-delay: 1s ;
+  }
+
+  #masterPoster{
+    height: 35px;
+    width: 35px;
+    margin-right: 0.5rem;
+  }
+
+  .poster{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title{
+    width:130px;
+    line-height: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .subtitle{
+    font-size: 0.7rem;
+    opacity: 0.8;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .volume-controls {
+    width: 20vw;
+  }
+  
+  .player-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+  }
+  
+  .player-controls {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .player-controls img:hover{
+    opacity: 1;
+   }
+  
+  .volume-controls {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
+  
+  .player-timeline {
+    display: flex;
+    align-items: center;
+  }
+
+  #timeline{
+    width:40vw;
+    cursor: pointer;
+  }
+
+  
+  .volume-slider {
+    width: 100px;
+    height: 4px;
+    cursor: pointer;
+    background-color: #1bd760;
+  }
+
+
+  
+  
+  .library::-webkit-scrollbar{
+    display: none;
+  }
+  .main-content::-webkit-scrollbar{
+    display: none;
+  }
+  .cards-container::-webkit-scrollbar{
+    display: none;
+  }
+  .result::-webkit-scrollbar{
+    display: none;
+  }
